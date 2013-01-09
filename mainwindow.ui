@@ -38,29 +38,29 @@
     <property name="title">
      <string>文件</string>
     </property>
-    <addaction name="action"/>
-    <addaction name="action_O"/>
-    <addaction name="action_2"/>
+    <addaction name="actionNewLine"/>
+    <addaction name="actionOpenLine"/>
+    <addaction name="actionRecent"/>
     <addaction name="separator"/>
-    <addaction name="action_4"/>
+    <addaction name="actionCloseCurrent"/>
     <addaction name="separator"/>
-    <addaction name="action_6"/>
+    <addaction name="actionSaveLine"/>
     <addaction name="separator"/>
-    <addaction name="action_PDF"/>
-    <addaction name="action_Oracle"/>
+    <addaction name="actionExportPDF"/>
+    <addaction name="actionExportOracle"/>
     <addaction name="separator"/>
-    <addaction name="action_10"/>
+    <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
      <string>编辑</string>
     </property>
-    <addaction name="action_11"/>
-    <addaction name="action_12"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
     <addaction name="separator"/>
-    <addaction name="action_14"/>
-    <addaction name="action_15"/>
-    <addaction name="action_16"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
     <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menu_3">
@@ -81,7 +81,7 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="action">
+  <action name="actionNewLine">
    <property name="text">
     <string>新建水准路线(&amp;N)</string>
    </property>
@@ -89,7 +89,7 @@
     <string>Ctrl+N</string>
    </property>
   </action>
-  <action name="action_O">
+  <action name="actionOpenLine">
    <property name="text">
     <string>打开水准路线(&amp;O)</string>
    </property>
@@ -97,12 +97,12 @@
     <string>Ctrl+O</string>
    </property>
   </action>
-  <action name="action_2">
+  <action name="actionRecent">
    <property name="text">
     <string>最近使用的水准路线</string>
    </property>
   </action>
-  <action name="action_4">
+  <action name="actionCloseCurrent">
    <property name="text">
     <string>关闭当前水准路线</string>
    </property>
@@ -110,7 +110,7 @@
     <string>Ctrl+W</string>
    </property>
   </action>
-  <action name="action_6">
+  <action name="actionSaveLine">
    <property name="text">
     <string>保存当前水准路线</string>
    </property>
@@ -118,17 +118,17 @@
     <string>Ctrl+S</string>
    </property>
   </action>
-  <action name="action_PDF">
+  <action name="actionExportPDF">
    <property name="text">
     <string>输出为PDF</string>
    </property>
   </action>
-  <action name="action_Oracle">
+  <action name="actionExportOracle">
    <property name="text">
     <string>输出为Oracle导入文件</string>
    </property>
   </action>
-  <action name="action_10">
+  <action name="actionQuit">
    <property name="text">
     <string>退出</string>
    </property>
@@ -136,7 +136,7 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
-  <action name="action_11">
+  <action name="actionUndo">
    <property name="text">
     <string>撤销</string>
    </property>
@@ -144,7 +144,7 @@
     <string>Ctrl+Z</string>
    </property>
   </action>
-  <action name="action_12">
+  <action name="actionRedo">
    <property name="text">
     <string>重做</string>
    </property>
@@ -152,7 +152,7 @@
     <string>Ctrl+Y</string>
    </property>
   </action>
-  <action name="action_14">
+  <action name="actionCopy">
    <property name="text">
     <string>复制</string>
    </property>
@@ -160,7 +160,7 @@
     <string>Ctrl+C</string>
    </property>
   </action>
-  <action name="action_15">
+  <action name="actionCut">
    <property name="text">
     <string>剪切</string>
    </property>
@@ -168,7 +168,7 @@
     <string>Ctrl+X</string>
    </property>
   </action>
-  <action name="action_16">
+  <action name="actionPaste">
    <property name="text">
     <string>粘贴</string>
    </property>
