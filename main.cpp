@@ -1,15 +1,18 @@
 #include <QtGui/QApplication>
+#include <QTextCodec>
 #include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    QTextCodec *codec = QTextCodec::codecForName("UTF8");
+    QTextCodec::setCodecForLocale(codec);
+    QTextCodec::setCodecForCStrings(codec);
+    QTextCodec::setCodecForTr(codec);
+
     MainWindow w;
     w.show();
-    //test push
-    //secons test push
-    //third test push
-    //4 test push
-    //5 push
+
     return a.exec();
 }
