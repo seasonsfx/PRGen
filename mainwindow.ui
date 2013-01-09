@@ -84,7 +84,7 @@
   <action name="actionNewLine">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-new.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-new.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/document-new.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/document-new.png</iconset>
    </property>
    <property name="text">
     <string>新建水准路线(&amp;N)</string>
@@ -96,7 +96,7 @@
   <action name="actionOpenLine">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-open.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-open.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/document-open.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/document-open.png</iconset>
    </property>
    <property name="text">
     <string>打开水准路线(&amp;O)</string>
@@ -108,7 +108,7 @@
   <action name="actionRecent">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-open-recent.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-open-recent.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/document-open-recent.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/document-open-recent.png</iconset>
    </property>
    <property name="text">
     <string>最近使用的水准路线</string>
@@ -117,7 +117,7 @@
   <action name="actionCloseCurrent">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-close.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-close.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/document-close.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/document-close.png</iconset>
    </property>
    <property name="text">
     <string>关闭当前水准路线</string>
@@ -129,7 +129,7 @@
   <action name="actionSaveLine">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-save.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/document-save.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/document-save.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/document-save.png</iconset>
    </property>
    <property name="text">
     <string>保存当前水准路线</string>
@@ -141,7 +141,7 @@
   <action name="actionExportPDF">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/mimetypes/application-pdf.png</normaloff>:/icons32/E:/icons/oxygen/32x32/mimetypes/application-pdf.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/mimetypes/application-pdf.png</normaloff>:/icons/16x16/resources/icons/16x16/mimetypes/application-pdf.png</iconset>
    </property>
    <property name="text">
     <string>输出为PDF</string>
@@ -150,7 +150,7 @@
   <action name="actionExportOracle">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/mimetypes/application-vnd.oasis.opendocument.database.png</normaloff>:/icons32/E:/icons/oxygen/32x32/mimetypes/application-vnd.oasis.opendocument.database.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/places/server-database.png</normaloff>:/icons/16x16/resources/icons/16x16/places/server-database.png</iconset>
    </property>
    <property name="text">
     <string>输出为Oracle导入文件</string>
@@ -159,7 +159,7 @@
   <action name="actionQuit">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/application-exit.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/application-exit.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/application-exit.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/application-exit.png</iconset>
    </property>
    <property name="text">
     <string>退出</string>
@@ -171,7 +171,7 @@
   <action name="actionUndo">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-undo.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-undo.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-undo.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-undo.png</iconset>
    </property>
    <property name="text">
     <string>撤销</string>
@@ -183,7 +183,7 @@
   <action name="actionRedo">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-redo.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-redo.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-redo.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-redo.png</iconset>
    </property>
    <property name="text">
     <string>重做</string>
@@ -195,7 +195,7 @@
   <action name="actionCopy">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-copy.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-copy.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-copy.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-copy.png</iconset>
    </property>
    <property name="text">
     <string>复制</string>
@@ -207,7 +207,7 @@
   <action name="actionCut">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-cut.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-cut.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-cut.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-cut.png</iconset>
    </property>
    <property name="text">
     <string>剪切</string>
@@ -219,7 +219,7 @@
   <action name="actionPaste">
    <property name="icon">
     <iconset resource="icons.qrc">
-     <normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-paste.png</normaloff>:/icons32/E:/icons/oxygen/32x32/actions/edit-paste.png</iconset>
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-paste.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-paste.png</iconset>
    </property>
    <property name="text">
     <string>粘贴</string>
