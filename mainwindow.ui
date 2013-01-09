@@ -11,14 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>点之记生成</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>90</y>
+      <x>90</x>
+      <y>60</y>
       <width>113</width>
       <height>20</height>
      </rect>
@@ -34,6 +34,43 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_O"/>
+    <addaction name="action_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_4"/>
+    <addaction name="separator"/>
+    <addaction name="action_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_PDF"/>
+    <addaction name="action_Oracle"/>
+    <addaction name="separator"/>
+    <addaction name="action_10"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+    <addaction name="separator"/>
+    <addaction name="action_14"/>
+    <addaction name="action_15"/>
+    <addaction name="action_16"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -44,6 +81,71 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="text">
+    <string>新建水准路线(&amp;N)</string>
+   </property>
+  </action>
+  <action name="action_O">
+   <property name="text">
+    <string>打开水准路线(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>最近使用的水准路线</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>关闭当前水准路线</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>保存当前水准路线</string>
+   </property>
+  </action>
+  <action name="action_PDF">
+   <property name="text">
+    <string>输出为PDF</string>
+   </property>
+  </action>
+  <action name="action_Oracle">
+   <property name="text">
+    <string>输出为Oracle导入文件</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
