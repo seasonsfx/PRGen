@@ -13,18 +13,7 @@
   <property name="windowTitle">
    <string>点之记生成</string>
   </property>
-  <widget class="QWidget" name="centralWidget">
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>60</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralWidget"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -46,6 +35,8 @@
     <addaction name="separator"/>
     <addaction name="actionSaveLine"/>
     <addaction name="separator"/>
+    <addaction name="actionSelectTemplate"/>
+    <addaction name="separator"/>
     <addaction name="actionExportPDF"/>
     <addaction name="actionExportOracle"/>
     <addaction name="separator"/>
@@ -65,8 +56,35 @@
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
-     <string>工具</string>
+     <string>路线</string>
     </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>插入页面</string>
+     </property>
+     <addaction name="actionInsertSingleLeft"/>
+     <addaction name="actionInsertSingleRight"/>
+     <addaction name="actionInsetMultiLeft"/>
+     <addaction name="actionInsertMultiRight"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>删除页面</string>
+     </property>
+     <addaction name="actionDel"/>
+     <addaction name="actionDelMulti"/>
+    </widget>
+    <widget class="QMenu" name="menu_6">
+     <property name="title">
+      <string>路线间复制</string>
+     </property>
+     <addaction name="actionCopy2Current"/>
+    </widget>
+    <addaction name="menu_4"/>
+    <addaction name="menu_5"/>
+    <addaction name="menu_6"/>
+    <addaction name="separator"/>
+    <addaction name="actionLineProperties"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -226,6 +244,102 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionSelectTemplate">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/mimetypes/application-vnd.sun.xml.draw.template.png</normaloff>:/icons/16x16/resources/icons/16x16/mimetypes/application-vnd.sun.xml.draw.template.png</iconset>
+   </property>
+   <property name="text">
+    <string>模板选择</string>
+   </property>
+  </action>
+  <action name="actionLineProperties">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/document-properties.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/document-properties.png</iconset>
+   </property>
+   <property name="text">
+    <string>路线属性</string>
+   </property>
+   <property name="toolTip">
+    <string>路线属性</string>
+   </property>
+  </action>
+  <action name="actionInsertSingleLeft">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-table-insert-column-left.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-table-insert-column-left.png</iconset>
+   </property>
+   <property name="text">
+    <string>当前页面前插入单张</string>
+   </property>
+   <property name="toolTip">
+    <string>当前页面前插入单张点之记</string>
+   </property>
+  </action>
+  <action name="actionInsertSingleRight">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-table-insert-column-right.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-table-insert-column-right.png</iconset>
+   </property>
+   <property name="text">
+    <string>当前页面后插入单张</string>
+   </property>
+   <property name="toolTip">
+    <string>当前页面后插入单张点之记</string>
+   </property>
+  </action>
+  <action name="actionInsetMultiLeft">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/go-previous-view-page.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/go-previous-view-page.png</iconset>
+   </property>
+   <property name="text">
+    <string>当前页面前插入多张</string>
+   </property>
+   <property name="toolTip">
+    <string>当前页面前插入多张点之记</string>
+   </property>
+  </action>
+  <action name="actionInsertMultiRight">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/go-next-view-page.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/go-next-view-page.png</iconset>
+   </property>
+   <property name="text">
+    <string>当前页面后插入多张</string>
+   </property>
+   <property name="toolTip">
+    <string>当前页面后插入多张点之记</string>
+   </property>
+  </action>
+  <action name="actionDel">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-table-delete-column.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-table-delete-column.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除当前页面</string>
+   </property>
+  </action>
+  <action name="actionDelMulti">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-delete-shred.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-delete-shred.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除指定页面</string>
+   </property>
+  </action>
+  <action name="actionCopy2Current">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-copy.png</normaloff>:/icons/16x16/resources/icons/16x16/actions/edit-copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制到本项目</string>
    </property>
   </action>
  </widget>

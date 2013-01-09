@@ -622,6 +622,7 @@
         <file>resources/icons/16x16/actions/zoom-select.png</file>
         <file>resources/icons/16x16/mimetypes/application-pdf.png</file>
         <file>resources/icons/16x16/places/server-database.png</file>
+        <file>resources/icons/16x16/mimetypes/application-vnd.sun.xml.draw.template.png</file>
     </qresource>
     <qresource prefix="/icons/32x32">
         <file>resources/icons/32x32/actions/address-book-new.png</file>
