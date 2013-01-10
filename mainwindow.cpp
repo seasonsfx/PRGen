@@ -7,6 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    QWidget *PRPageTabWidget = new QWidget;
+    PRPage.setupUi(PRPageTabWidget);
+    ui->tabWidgetPR->addTab(PRPageTabWidget,tr("第1页"));
+
+
     //用正则表达式对输入进行限制
     QRegExp totalPointsExp("[1-9]||[1-9][0-9]||[1-2][0-9]{2}");
 
