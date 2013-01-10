@@ -1005,6 +1005,44 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEditPointName</tabstop>
+  <tabstop>lineEditFormerName</tabstop>
+  <tabstop>lineEditLongitude</tabstop>
+  <tabstop>lineEditLatitude</tabstop>
+  <tabstop>lineEditHight</tabstop>
+  <tabstop>lineEditLocation</tabstop>
+  <tabstop>lineEditScale</tabstop>
+  <tabstop>pushButtonAddAnchor</tabstop>
+  <tabstop>pushButtonAddStele</tabstop>
+  <tabstop>pushButtonAddPlate</tabstop>
+  <tabstop>pushButtonAddOtherInfo</tabstop>
+  <tabstop>lineEditPrivousPoint</tabstop>
+  <tabstop>lineEditPrivousPointDistance</tabstop>
+  <tabstop>lineEditNextPoint</tabstop>
+  <tabstop>lineEditNextPointDistance</tabstop>
+  <tabstop>comboBoxMarkstoneType</tabstop>
+  <tabstop>lineEditMarkstoneMaterial</tabstop>
+  <tabstop>comboBoxLandType</tabstop>
+  <tabstop>comboBoxSoilType</tabstop>
+  <tabstop>lineEditLandUser</tabstop>
+  <tabstop>lineEditConservatorCompany</tabstop>
+  <tabstop>lineEditConservator</tabstop>
+  <tabstop>lineEditPointSetter</tabstop>
+  <tabstop>lineEditPointSetterCompany</tabstop>
+  <tabstop>lineEditPointSittingYear</tabstop>
+  <tabstop>lineEditPointSettingMonth</tabstop>
+  <tabstop>lineEditPointSettingDay</tabstop>
+  <tabstop>lineEditPointBurier</tabstop>
+  <tabstop>lineEditPointBurierCompany</tabstop>
+  <tabstop>lineEditPointBuringYear</tabstop>
+  <tabstop>lineEditPointBuringMonth</tabstop>
+  <tabstop>lineEditPointBuringDay</tabstop>
+  <tabstop>graphicsViewPositionMap</tabstop>
+  <tabstop>listViewDetialDescription</tabstop>
+  <tabstop>graphicsViewMarkstone</tabstop>
+  <tabstop>lineEditMapsheet</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
