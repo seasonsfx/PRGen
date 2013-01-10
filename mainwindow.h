@@ -19,6 +19,7 @@ public:
 private:
     Ui::MainWindow *ui;
     Ui::FormPRPage PRPage;
+    Ui::FormPRPage *PRPagePointer;
 };
 
 #endif // MAINWINDOW_H

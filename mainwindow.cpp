@@ -9,7 +9,14 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QWidget *PRPageTabWidget = new QWidget;
     PRPage.setupUi(PRPageTabWidget);
+    Ui::FormPRPage secondPRPage;
+    QWidget *secondPRPageTabWidget = new QWidget;
+    secondPRPage.setupUi(secondPRPageTabWidget);
     ui->tabWidgetPR->addTab(PRPageTabWidget,tr("第1页"));
+    ui->tabWidgetPR->addTab(secondPRPageTabWidget,tr("第2页"));
+
+//    PRPagePointer->setupUi(this);
+//    ui->tabWidgetPR->addTab(this,tr("第2页"));
 
 
     //用正则表达式对输入进行限制
