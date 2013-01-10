@@ -6,13 +6,208 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>672</width>
-    <height>443</height>
+    <width>894</width>
+    <height>499</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QLabel" name="labelLineName">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>路线名：</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>60</y>
+     <width>311</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutBasicInfo">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutPointName">
+      <item>
+       <widget class="QLabel" name="labelPointName">
+        <property name="text">
+         <string>点名：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPointName">
+        <property name="placeholderText">
+         <string>点名</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutFormerName">
+      <item>
+       <widget class="QLabel" name="labelFormerName">
+        <property name="text">
+         <string>曾用名：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditFormerName">
+        <property name="placeholderText">
+         <string>曾用名</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutLongitude">
+      <item>
+       <widget class="QLabel" name="labelLongitude">
+        <property name="text">
+         <string>经度：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditLongitude">
+        <property name="placeholderText">
+         <string>经度(dd.mmss)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutLatitude">
+      <item>
+       <widget class="QLabel" name="labelLatitude">
+        <property name="text">
+         <string>纬度：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditLatitude">
+        <property name="placeholderText">
+         <string>纬度(dd.mmss)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutHeight">
+      <item>
+       <widget class="QLabel" name="labelHight">
+        <property name="text">
+         <string>概略高程(m)：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditHight">
+        <property name="placeholderText">
+         <string>概略高程</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutLocation">
+      <item>
+       <widget class="QLabel" name="labelLocation">
+        <property name="text">
+         <string>所在地：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditLocation">
+        <property name="placeholderText">
+         <string>所在地</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutScale">
+      <item>
+       <widget class="QLabel" name="labelScale">
+        <property name="text">
+         <string>比例尺：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelScale_2">
+        <property name="text">
+         <string>1:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditScale">
+        <property name="placeholderText">
+         <string>比例尺</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutMapsheet">
+      <item>
+       <widget class="QLabel" name="labelMapsheet">
+        <property name="text">
+         <string>图幅号：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditMapsheet">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>图幅号</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsViewPositionMap">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>340</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
