@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>FormPRPage</class>
+ <widget class="QWidget" name="FormPRPage">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>894</width>
-    <height>499</height>
+    <width>1102</width>
+    <height>798</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QLabel" name="labelLineName">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>20</y>
+     <x>90</x>
+     <y>10</y>
      <width>54</width>
      <height>12</height>
     </rect>
@@ -26,165 +26,31 @@
     <string>路线名：</string>
    </property>
   </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QGroupBox" name="groupBoxPositionMap">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>60</y>
-     <width>311</width>
-     <height>341</height>
+     <x>20</x>
+     <y>40</y>
+     <width>362</width>
+     <height>374</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayoutBasicInfo">
+   <property name="title">
+    <string>详细位置图</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutPointName">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
       <item>
-       <widget class="QLabel" name="labelPointName">
-        <property name="text">
-         <string>点名：</string>
+       <widget class="QGraphicsView" name="graphicsViewPositionMap">
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditPointName">
-        <property name="placeholderText">
-         <string>点名</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutFormerName">
-      <item>
-       <widget class="QLabel" name="labelFormerName">
-        <property name="text">
-         <string>曾用名：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditFormerName">
-        <property name="placeholderText">
-         <string>曾用名</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutLongitude">
-      <item>
-       <widget class="QLabel" name="labelLongitude">
-        <property name="text">
-         <string>经度：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditLongitude">
-        <property name="placeholderText">
-         <string>经度(dd.mmss)</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutLatitude">
-      <item>
-       <widget class="QLabel" name="labelLatitude">
-        <property name="text">
-         <string>纬度：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditLatitude">
-        <property name="placeholderText">
-         <string>纬度(dd.mmss)</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutHeight">
-      <item>
-       <widget class="QLabel" name="labelHight">
-        <property name="text">
-         <string>概略高程(m)：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditHight">
-        <property name="placeholderText">
-         <string>概略高程</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutLocation">
-      <item>
-       <widget class="QLabel" name="labelLocation">
-        <property name="text">
-         <string>所在地：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditLocation">
-        <property name="placeholderText">
-         <string>所在地</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutScale">
-      <item>
-       <widget class="QLabel" name="labelScale">
-        <property name="text">
-         <string>比例尺：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="labelScale_2">
-        <property name="text">
-         <string>1:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditScale">
-        <property name="placeholderText">
-         <string>比例尺</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayoutMapsheet">
-      <item>
-       <widget class="QLabel" name="labelMapsheet">
-        <property name="text">
-         <string>图幅号：</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEditMapsheet">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="placeholderText">
-         <string>图幅号</string>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
         </property>
        </widget>
       </item>
@@ -192,21 +58,314 @@
     </item>
    </layout>
   </widget>
-  <widget class="QGraphicsView" name="graphicsViewPositionMap">
+  <widget class="QGroupBox" name="groupBoxBasicPointInfo">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>60</y>
-     <width>340</width>
-     <height>340</height>
+     <x>380</x>
+     <y>40</y>
+     <width>300</width>
+     <height>374</height>
     </rect>
    </property>
-   <property name="verticalScrollBarPolicy">
-    <enum>Qt::ScrollBarAlwaysOff</enum>
+   <property name="title">
+    <string>点位基本信息</string>
    </property>
-   <property name="horizontalScrollBarPolicy">
-    <enum>Qt::ScrollBarAlwaysOff</enum>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutBasicInfo">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutPointName">
+        <item>
+         <widget class="QLabel" name="labelPointName">
+          <property name="text">
+           <string>点名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditPointName">
+          <property name="placeholderText">
+           <string>点名</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutFormerName">
+        <item>
+         <widget class="QLabel" name="labelFormerName">
+          <property name="text">
+           <string>曾用名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditFormerName">
+          <property name="placeholderText">
+           <string>曾用名</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutLongitude">
+        <item>
+         <widget class="QLabel" name="labelLongitude">
+          <property name="text">
+           <string>经度：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditLongitude">
+          <property name="placeholderText">
+           <string>经度(dd.mmss)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutLatitude">
+        <item>
+         <widget class="QLabel" name="labelLatitude">
+          <property name="text">
+           <string>纬度：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditLatitude">
+          <property name="placeholderText">
+           <string>纬度(dd.mmss)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutHeight">
+        <item>
+         <widget class="QLabel" name="labelHight">
+          <property name="text">
+           <string>概略高程(m)：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditHight">
+          <property name="placeholderText">
+           <string>概略高程</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutLocation">
+        <item>
+         <widget class="QLabel" name="labelLocation">
+          <property name="text">
+           <string>所在地：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditLocation">
+          <property name="placeholderText">
+           <string>所在地</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutScale">
+        <item>
+         <widget class="QLabel" name="labelScale">
+          <property name="text">
+           <string>比例尺：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelScale_2">
+          <property name="text">
+           <string>1:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditScale">
+          <property name="placeholderText">
+           <string>比例尺</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutMapsheet">
+        <item>
+         <widget class="QLabel" name="labelMapsheet">
+          <property name="text">
+           <string>图幅号：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditMapsheet">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>图幅号</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxDetialDescription">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>40</y>
+     <width>351</width>
+     <height>374</height>
+    </rect>
    </property>
+   <property name="title">
+    <string>详细点位信息</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QListView" name="listViewDetialDescription"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutDescriptionButton">
+        <item>
+         <widget class="QPushButton" name="pushButtonAddAnchor">
+          <property name="text">
+           <string>增加栓距</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAddStele">
+          <property name="text">
+           <string>指示碑</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAddPlate">
+          <property name="text">
+           <string>指示盘</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonAddOtherInfo">
+          <property name="text">
+           <string>其他信息</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutPrivousPointInfo">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>距</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPrivousPoint">
+            <property name="placeholderText">
+             <string>上一点</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPrivousPointDistance">
+            <property name="placeholderText">
+             <string>距离(km)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>km</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutNextPointInfo">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>距</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditNextPoint">
+            <property name="placeholderText">
+             <string>下一点</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditNextPointDistance">
+            <property name="placeholderText">
+             <string>距离(km)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>km</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
