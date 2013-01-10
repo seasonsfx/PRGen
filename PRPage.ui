@@ -403,6 +403,451 @@
     </item>
    </layout>
   </widget>
+  <widget class="QGraphicsView" name="graphicsViewMarkstone">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>450</y>
+     <width>256</width>
+     <height>256</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelLandUser">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>610</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>土地使用者：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditLandUser">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>610</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelConservatorCompany">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>650</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>接管单位：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditConservatorCompany">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>650</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditConservator">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>680</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelConservator">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>680</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>接管人：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointSetter">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>720</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选点人：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointSetter">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>720</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointSetterCompany">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>750</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选点单位：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointSetterCompany">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>750</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointBurier">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>470</y>
+     <width>54</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>埋石人：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointBurierCompany">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>500</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>埋石单位：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointBurierCompany">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>500</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointBurier">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>470</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointSettingTime">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>770</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选点时间：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointBuringYear">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>530</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>年</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointBuringTime">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>530</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>埋石时间：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointBuringMonth">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>530</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>月</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointBuringDay">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>530</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>日</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointBuringYear">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>530</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>年</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointBuringMonth">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>530</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>月</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointBuringDay">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>530</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointSettingMonth">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>770</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>月</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointSettinggDay">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>770</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>日</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointSettingYear">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>770</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>年</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPointSettingMonth">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>770</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>月</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointSettingDay">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>770</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>日</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPointSittingYear">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>770</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>年</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxMarkstoneInfo">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>440</y>
+     <width>181</width>
+     <height>138</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>标石信息</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelMarkstoneType">
+        <property name="text">
+         <string>标石类型：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxMarkstoneType"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="labelMarkstoneMaterial">
+        <property name="text">
+         <string>标石质料：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditMarkstoneMaterial"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="labelLandType">
+        <property name="text">
+         <string>地别：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxLandType"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="labelSoilType">
+        <property name="text">
+         <string>土质：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxSoilType"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
  <connections/>
