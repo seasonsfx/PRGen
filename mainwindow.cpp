@@ -54,6 +54,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->tabWidgetPR->removeTab(2);
 
+    connect(ui->pushButtonAddPRPages,SIGNAL(clicked()),this,SLOT(addPRPages()));
+
 }
 
 MainWindow::~MainWindow()
@@ -61,16 +63,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-int MainWindow::addPRPages()
+void MainWindow::addPRPages()
 {
+    PRPageNum = ui->lineEditTotalPoints->text().toInt();
     int currentPageNum = 0;
     QString pageNumStr;
-    pageNumStr = QString::number(currentPageNum+1,10);
+
 
     QWidget *PRPagesTabWidget[PRPageNum];
     Ui::FormPRPage PRPages[PRPageNum];
     for(currentPageNum;currentPageNum<PRPageNum;currentPageNum++)
     {
+        pageNumStr = QString::number(currentPageNum+1,10);
         PRPagesTabWidget[currentPageNum] = new QWidget;
         PRPages[currentPageNum].setupUi(PRPagesTabWidget[currentPageNum]);
         ui->tabWidgetPR->addTab(PRPagesTabWidget[currentPageNum],pageNumStr);

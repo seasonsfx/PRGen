@@ -177,6 +177,13 @@
                 </property>
                </widget>
               </item>
+              <item>
+               <widget class="QPushButton" name="pushButtonAddPRPages">
+                <property name="text">
+                 <string>添加点之记页面</string>
+                </property>
+               </widget>
+              </item>
              </layout>
             </item>
            </layout>

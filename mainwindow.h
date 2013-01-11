@@ -23,7 +23,7 @@ private:
     int PRPageNum;
 
 private slots:
-    int addPRPages();
+    void addPRPages();
 };
 
 #endif // MAINWINDOW_H
