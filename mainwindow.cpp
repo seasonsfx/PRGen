@@ -1,44 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-//    QWidget *PRPageTabWidget = new QWidget;
-//    PRPage.setupUi(PRPageTabWidget);
-//    Ui::FormPRPage secondPRPage;
-//    QWidget *secondPRPageTabWidget = new QWidget;
-//    secondPRPage.setupUi(secondPRPageTabWidget);
-//    ui->tabWidgetPR->addTab(PRPageTabWidget,tr("第1页"));
-//    ui->tabWidgetPR->addTab(secondPRPageTabWidget,tr("第2页"));
-
-////    QWidget *otherPRPageTabWidget = new QWidget[4];
-//    QWidget *otherPRPageTabWidget[4];
-//    for(int i = 0;i<4;i++)
-//    {
-//        otherPRPageTabWidget[i] = new QWidget;
-//    }
-//    Ui::FormPRPage otherPRPage[4];
-//    otherPRPage[0].setupUi(otherPRPageTabWidget[0]);
-//    ui->tabWidgetPR->addTab(otherPRPageTabWidget[0],tr("第3页"));
-//    ui->tabWidgetPR->addTab(otherPRPageTabWidget[1],tr("第4页"));
-
-
-//    int pageNum = 10;
-//    QWidget *allPRPagesTabWidget[pageNum];
-//    Ui::FormPRPage allPRPages[pageNum];
-//    for(int i = 0;i<pageNum;i++)
-//    {
-//        allPRPagesTabWidget[i] = new QWidget;
-//        allPRPages[i].setupUi(allPRPagesTabWidget[i]);
-//        ui->tabWidgetPR->addTab(allPRPagesTabWidget[i],(QString)i);
-//    }
-
-//    PRPagePointer->setupUi(this);
-//    ui->tabWidgetPR->addTab(this,tr("第2页"));
 
 
     //用正则表达式对输入进行限制
@@ -47,12 +15,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lineEditTotalPoints->setValidator(new QRegExpValidator(totalPointsExp,this));
 
     //界面控件相关设置
-    ui->comboBoxLineGrade->addItem(tr("一等"));
-    ui->comboBoxLineGrade->addItem(tr("二等"));
-    ui->comboBoxLineGrade->addItem(tr("三等"));
-    ui->comboBoxLineGrade->addItem(tr("四等"));
+//    ui->comboBoxLineGrade->addItem(tr("一等"));
+//    ui->comboBoxLineGrade->addItem(tr("二等"));
+//    ui->comboBoxLineGrade->addItem(tr("三等"));
+//    ui->comboBoxLineGrade->addItem(tr("四等"));
 
-    ui->tabWidgetPR->removeTab(2);
+//    ui->tabWidgetPR->removeTab(2);
 
     connect(ui->pushButtonAddPRPages,SIGNAL(clicked()),this,SLOT(addPRPages()));
 
@@ -65,19 +33,27 @@ MainWindow::~MainWindow()
 
 void MainWindow::addPRPages()
 {
-    PRPageNum = ui->lineEditTotalPoints->text().toInt();
-    int currentPageNum = 0;
-    QString pageNumStr;
+    if(ui->lineEditTotalPoints->text().length()==0)
+        QMessageBox::warning(this,tr("未输入页数"),tr("请输入所需添加的点之记页数"),QMessageBox::Ok);
+    else{
+        PRPageNum = ui->lineEditTotalPoints->text().toInt();
+        int currentPageNum = 0;
+        QString pageNumStr;
 
 
-    QWidget *PRPagesTabWidget[PRPageNum];
-    Ui::FormPRPage PRPages[PRPageNum];
-    for(currentPageNum;currentPageNum<PRPageNum;currentPageNum++)
-    {
-        pageNumStr = QString::number(currentPageNum+1,10);
-        PRPagesTabWidget[currentPageNum] = new QWidget;
-        PRPages[currentPageNum].setupUi(PRPagesTabWidget[currentPageNum]);
-        ui->tabWidgetPR->addTab(PRPagesTabWidget[currentPageNum],pageNumStr);
+        QWidget *PRPagesTabWidget[PRPageNum];
+        Ui::FormPRPage PRPages[PRPageNum];
+        for(currentPageNum;currentPageNum<PRPageNum;currentPageNum++)
+        {
+            pageNumStr = QString::number(currentPageNum+1,10);
+            PRPagesTabWidget[currentPageNum] = new QWidget;
+            PRPages[currentPageNum].setupUi(PRPagesTabWidget[currentPageNum]);
+            ui->tabWidgetPR->addTab(PRPagesTabWidget[currentPageNum],pageNumStr);
+        }
+        //禁用添加按钮，防止再次添加
+        ui->lineEditTotalPoints->setEnabled(false);
+        ui->pushButtonAddPRPages->setEnabled(false);
     }
 
 }
+

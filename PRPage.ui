@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1007</width>
+    <width>1009</width>
     <height>738</height>
    </rect>
   </property>
@@ -477,7 +477,7 @@
            </property>
            <property name="maximumSize">
             <size>
-             <width>240</width>
+             <width>300</width>
              <height>16777215</height>
             </size>
            </property>
@@ -505,6 +505,82 @@
                   <height>0</height>
                  </size>
                 </property>
+                <property name="currentIndex">
+                 <number>9</number>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToContents</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>深层基岩水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>浅层基岩水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>岩层基本水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>混凝土柱基本水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>钢管基本水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>永冻地区钢管基本水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>沙漠地区混凝土柱基本水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>岩层普通水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>混凝土柱普通水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>钢管普通水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>永冻地区钢管普通水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>沙漠地区混凝土柱普通水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>道路水准标石</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>墙角水准标志</string>
+                 </property>
+                </item>
                </widget>
               </item>
              </layout>

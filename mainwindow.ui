@@ -145,7 +145,28 @@
                </widget>
               </item>
               <item>
-               <widget class="QComboBox" name="comboBoxLineGrade"/>
+               <widget class="QComboBox" name="comboBoxLineGrade">
+                <item>
+                 <property name="text">
+                  <string>一等</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>二等</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>三等</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>四等</string>
+                 </property>
+                </item>
+               </widget>
               </item>
               <item>
                <spacer name="horizontalSpacer">
@@ -193,11 +214,6 @@
         <widget class="QWidget" name="tabIndex">
          <attribute name="title">
           <string>目录</string>
-         </attribute>
-        </widget>
-        <widget class="QWidget" name="tabPR1">
-         <attribute name="title">
-          <string>页</string>
          </attribute>
         </widget>
        </widget>
