@@ -20,6 +20,10 @@ private:
     Ui::MainWindow *ui;
     Ui::FormPRPage PRPage;
     Ui::FormPRPage *PRPagePointer;
+    int PRPageNum;
+
+private slots:
+    int addPRPages();
 };
 
 #endif // MAINWINDOW_H

@@ -7,24 +7,35 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QWidget *PRPageTabWidget = new QWidget;
-    PRPage.setupUi(PRPageTabWidget);
-    Ui::FormPRPage secondPRPage;
-    QWidget *secondPRPageTabWidget = new QWidget;
-    secondPRPage.setupUi(secondPRPageTabWidget);
-    ui->tabWidgetPR->addTab(PRPageTabWidget,tr("第1页"));
-    ui->tabWidgetPR->addTab(secondPRPageTabWidget,tr("第2页"));
+//    QWidget *PRPageTabWidget = new QWidget;
+//    PRPage.setupUi(PRPageTabWidget);
+//    Ui::FormPRPage secondPRPage;
+//    QWidget *secondPRPageTabWidget = new QWidget;
+//    secondPRPage.setupUi(secondPRPageTabWidget);
+//    ui->tabWidgetPR->addTab(PRPageTabWidget,tr("第1页"));
+//    ui->tabWidgetPR->addTab(secondPRPageTabWidget,tr("第2页"));
 
-//    QWidget *otherPRPageTabWidget = new QWidget[4];
-    QWidget *otherPRPageTabWidget[4];
-    for(int i = 0;i<4;i++)
-    {
-        otherPRPageTabWidget[i] = new QWidget;
-    }
-    Ui::FormPRPage otherPRPage[4];
-    otherPRPage[0].setupUi(otherPRPageTabWidget[0]);
-    ui->tabWidgetPR->addTab(otherPRPageTabWidget[0],tr("第3页"));
-    ui->tabWidgetPR->addTab(otherPRPageTabWidget[1],tr("第4页"));
+////    QWidget *otherPRPageTabWidget = new QWidget[4];
+//    QWidget *otherPRPageTabWidget[4];
+//    for(int i = 0;i<4;i++)
+//    {
+//        otherPRPageTabWidget[i] = new QWidget;
+//    }
+//    Ui::FormPRPage otherPRPage[4];
+//    otherPRPage[0].setupUi(otherPRPageTabWidget[0]);
+//    ui->tabWidgetPR->addTab(otherPRPageTabWidget[0],tr("第3页"));
+//    ui->tabWidgetPR->addTab(otherPRPageTabWidget[1],tr("第4页"));
+
+
+//    int pageNum = 10;
+//    QWidget *allPRPagesTabWidget[pageNum];
+//    Ui::FormPRPage allPRPages[pageNum];
+//    for(int i = 0;i<pageNum;i++)
+//    {
+//        allPRPagesTabWidget[i] = new QWidget;
+//        allPRPages[i].setupUi(allPRPagesTabWidget[i]);
+//        ui->tabWidgetPR->addTab(allPRPagesTabWidget[i],(QString)i);
+//    }
 
 //    PRPagePointer->setupUi(this);
 //    ui->tabWidgetPR->addTab(this,tr("第2页"));
@@ -48,4 +59,21 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+int MainWindow::addPRPages()
+{
+    int currentPageNum = 0;
+    QString pageNumStr;
+    pageNumStr = QString::number(currentPageNum+1,10);
+
+    QWidget *PRPagesTabWidget[PRPageNum];
+    Ui::FormPRPage PRPages[PRPageNum];
+    for(currentPageNum;currentPageNum<PRPageNum;currentPageNum++)
+    {
+        PRPagesTabWidget[currentPageNum] = new QWidget;
+        PRPages[currentPageNum].setupUi(PRPagesTabWidget[currentPageNum]);
+        ui->tabWidgetPR->addTab(PRPagesTabWidget[currentPageNum],pageNumStr);
+    }
+
 }
