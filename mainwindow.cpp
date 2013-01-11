@@ -15,6 +15,17 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->tabWidgetPR->addTab(PRPageTabWidget,tr("第1页"));
     ui->tabWidgetPR->addTab(secondPRPageTabWidget,tr("第2页"));
 
+//    QWidget *otherPRPageTabWidget = new QWidget[4];
+    QWidget *otherPRPageTabWidget[4];
+    for(int i = 0;i<4;i++)
+    {
+        otherPRPageTabWidget[i] = new QWidget;
+    }
+    Ui::FormPRPage otherPRPage[4];
+    otherPRPage[0].setupUi(otherPRPageTabWidget[0]);
+    ui->tabWidgetPR->addTab(otherPRPageTabWidget[0],tr("第3页"));
+    ui->tabWidgetPR->addTab(otherPRPageTabWidget[1],tr("第4页"));
+
 //    PRPagePointer->setupUi(this);
 //    ui->tabWidgetPR->addTab(this,tr("第2页"));
 
